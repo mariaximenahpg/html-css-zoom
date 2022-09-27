@@ -1,0 +1,134 @@
+/*------------
+    Reset
+------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------
+    Common
+------------*/
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 15px;
+}
+
+button {
+    border: none;
+}
+
+/*------------
+    Header
+------------*/
+
+.button-header {
+    background-color: lightgrey;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+header .icone-header {
+    text-align: right;
+    padding: 10px 10px;
+}
+
+/*------------
+    Main
+------------*/
+
+main {
+    width: calc(1200px - 60px);
+    margin: auto;
+    padding-top: 50px;
+    overflow-y: auto;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+}
+
+.partecipante {
+    width: calc(1140px / 7 - 10px);
+    position: relative;
+    margin: 10px 5px;
+    height: calc(600px / 5 - 20px);
+}
+
+.foto-profilo {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.name {
+    font-size: 10px;
+    line-height: 15px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*------------
+    Footer
+------------*/
+
+footer {
+    background-color: rgb(19, 18, 18);
+    height: 80px;
+    width: 100%;
+}
+
+.footer-row {
+    display: flex;
+    height: 100%;
+}
+
+.footer-button {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.footer-icon button {
+    margin: 0px 10px;
+    background-color: transparent;
+    color: white;
+}
+
+ .middle.footer-button {
+    width: 45%;
+    justify-content: center;
+}
+
+.testo {
+    font-size: 8px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+#green {
+    color: green;
+}
+
+.last.footer-button {
+    width: calc(100% - 45% - 25%);
+    justify-content: flex-end;
+}
+
+.last.footer-button .last-button {
+    color: red;
+    background-color: lightgrey;
+    height: 80px;
+    padding: 0px 25px;
+}
